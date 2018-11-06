@@ -1,0 +1,129 @@
+:root {
+    --bg-color: #727072;
+    --page-spacing: 50px;
+    --bar-color: rgb(47, 8, 83);
+    --baralt-color: #EBBA7F;
+    --barfont-color: #7AA45E;
+    --title-color: #FFD700;
+    --titlebg-color: rgb(14, 27, 5);
+
+}
+
+body {
+    background-color: var(--bg-color);
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 70px 600px;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Lora', sans-serif;
+}
+
+.ReportTitle {
+    color: var(--title-color);
+}
+
+.Title {
+    grid-row: 1;
+    grid-column: 1 / span 2;
+    font-size: 50px;
+    background-color: var(--titlebg-color);
+    padding: 4px;
+    grid-column: 1 / span 2;
+    grid-row: 1;
+}
+
+.BarChart {
+    grid-row: 2;
+    grid-column: 1 / span 2;
+    display: flex;
+    flex-wrap: nowrap;
+    flex: 1 1 1 1 1 1 1;
+    padding: 200px 100px 0;
+    align-items: flex-end;
+    justify-content: space-around;
+    border-bottom: 5px solid var(--bar-color);
+}
+
+
+.BarChart-bar-1 {
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    width: 120px;
+    padding-top: 10px;
+    transition: background-color 1s;
+    background-color:  #F86624;
+}
+
+
+.BarChart-bar-2 {
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    width: 120px;
+    padding-top: 10px;
+    transition: background-color 1s;
+    background-color: #EA3546;
+}
+.BarChart-bar-3 {
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    width: 120px;
+    padding-top: 10px;
+    transition: background-color 1s;
+    background-color: #FBDC02;
+
+}
+
+.BarChart-bar-4 {
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    width: 120px;
+    padding-top: 10px;
+    transition: background-color 1s;
+    background-color: #662E9B;
+
+}
+.BarChart-bar-5 {
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    width: 120px;
+    padding-top: 10px;
+    transition: background-color 1s;
+    background-color: #43BCCD;
+
+}
+
+.BarChart-bar-6 {
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    width: 120px;
+    padding-top: 10px;
+    transition: background-color 1s;
+    background-color: #FFB1CA;
+
+}
+
+.BarChart-bar-7 {
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    width: 120px;
+    padding-top: 10px;
+    transition: background-color 1s;
+    background-color: #C2E812;
+
+}
+
+
+.BarChart-bar:hover {
+    background-color: rgb(126, 65, 84);
+    color: white;
+    font-weight: bold;
+}
