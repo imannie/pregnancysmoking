@@ -1,129 +1,117 @@
+/*color based on Pokemon ideas */
 :root {
-    --bg-color: #727072;
-    --page-spacing: 50px;
-    --bar-color: rgb(47, 8, 83);
-    --baralt-color: #EBBA7F;
-    --barfont-color: #7AA45E;
+    --bg-color: #273746;
+    --bar-color: white;
     --title-color: #FFD700;
-    --titlebg-color: rgb(14, 27, 5);
+    --pagebg-color: rgb(14, 27, 5);
+    --pika-yellow: #fae638;
+    --pika-red: #c52018;
+    --bulb-blue: #3ac6a5;
+    --bulb-pink: #dd2561;
+    --char-orange: #f27313;
+    --char-green: #8add56;
+    --jig-pink: #fad0de;
 
 }
 
-body {
-    background-color: var(--bg-color);
+html body {
+    background-color: var(--pagebg-color);
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 70px 600px;
+    grid-template-rows: 100px 600px;
     border: 0px;
-    padding: 0px;
+    padding: 2em;
     margin: 0px;
     font-family: 'Lora', sans-serif;
-}
-
-.ReportTitle {
-    color: var(--title-color);
+    text-align: center;
 }
 
 .Title {
     grid-row: 1;
     grid-column: 1 / span 2;
     font-size: 50px;
-    background-color: var(--titlebg-color);
-    padding: 4px;
+    color: var(--title-color);
+    padding: 20px;
     grid-column: 1 / span 2;
     grid-row: 1;
 }
 
-.BarChart {
+.BarChart  {
+    position: relative;
     grid-row: 2;
     grid-column: 1 / span 2;
     display: flex;
     flex-wrap: nowrap;
-    flex: 1 1 1 1 1 1 1;
-    padding: 200px 100px 0;
+    flex: 1 1 1 1 1;
+    padding: 250px;
+    padding-bottom: 0;
     align-items: flex-end;
-    justify-content: space-around;
-    border-bottom: 5px solid var(--bar-color);
+    justify-content: space-between;
+    border: 7px solid var(--bar-color);
+    font-size: 25px;
+    color: black;
+    background-color: var(--bg-color);
+    
 }
 
 
 .BarChart-bar-1 {
-    font-size: 25px;
-    color: black;
-    text-align: center;
     width: 120px;
-    padding-top: 10px;
+    padding-top: 5px;
     transition: background-color 1s;
-    background-color:  #F86624;
+    background-color: var(--pika-yellow);
 }
-
 
 .BarChart-bar-2 {
-    font-size: 25px;
-    color: black;
-    text-align: center;
     width: 120px;
-    padding-top: 10px;
+    padding-top: 5px;
     transition: background-color 1s;
-    background-color: #EA3546;
+    background-color: var(--pika-red);
 }
+
 .BarChart-bar-3 {
-    font-size: 25px;
-    color: black;
-    text-align: center;
     width: 120px;
     padding-top: 10px;
     transition: background-color 1s;
-    background-color: #FBDC02;
+    background-color:var(--bulb-blue);
 
 }
 
 .BarChart-bar-4 {
-    font-size: 25px;
-    color: black;
-    text-align: center;
     width: 120px;
     padding-top: 10px;
     transition: background-color 1s;
-    background-color: #662E9B;
+    background-color: var(--bulb-pink);
 
 }
 .BarChart-bar-5 {
-    font-size: 25px;
-    color: black;
-    text-align: center;
     width: 120px;
     padding-top: 10px;
     transition: background-color 1s;
-    background-color: #43BCCD;
+    background-color: var(--char-orange);
 
 }
 
 .BarChart-bar-6 {
-    font-size: 25px;
-    color: black;
-    text-align: center;
     width: 120px;
     padding-top: 10px;
     transition: background-color 1s;
-    background-color: #FFB1CA;
+    background-color: var(--char-green);
 
 }
 
 .BarChart-bar-7 {
-    font-size: 25px;
-    color: black;
-    text-align: center;
     width: 120px;
     padding-top: 10px;
     transition: background-color 1s;
-    background-color: #C2E812;
+    background-color:var(--jig-pink);
 
 }
 
 
-.BarChart-bar:hover {
+[class*="BarChart-bar"]:hover {
     background-color: rgb(126, 65, 84);
     color: white;
     font-weight: bold;
+    opacity: 0.1s;
 }
