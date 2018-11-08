@@ -1,4 +1,4 @@
-/*color based on Pokemon ideas */
+/* color based on Pokemon ideas */
 :root {
     --bg-color: #273746;
     --bar-color: white;
@@ -36,6 +36,7 @@ html body {
     grid-row: 1;
 }
 
+/* All according to BEM */
 .BarChart  {
     position: relative;
     grid-row: 2;
@@ -54,7 +55,7 @@ html body {
     
 }
 
-
+/* Styled of each bar */
 .BarChart-bar-1 {
     width: 120px;
     padding-top: 5px;
