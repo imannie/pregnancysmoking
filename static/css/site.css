@@ -1,5 +1,9 @@
+<<<<<<< HEAD:static/css/site.css
 /*color based on Pokemon ideas */
 
+=======
+/* color based on Pokemon ideas */
+>>>>>>> e5d7e6995e63623ea63f9482c75543cdbd629a3c:css/site.css
 :root {
     --bg-color: #273746;
     --bar-color: white;
@@ -37,6 +41,7 @@ html body {
     grid-row: 1;
 }
 
+/* All according to BEM */
 .BarChart  {
     position: relative;
     grid-row: 2;
@@ -55,8 +60,13 @@ html body {
     
 }
 
+<<<<<<< HEAD:static/css/site.css
 
 .BarChart-bar {
+=======
+/* Styled of each bar */
+.BarChart-bar-1 {
+>>>>>>> e5d7e6995e63623ea63f9482c75543cdbd629a3c:css/site.css
     width: 120px;
     padding-top: 5px;
     transition: background-color 1s;
@@ -80,8 +90,11 @@ html body {
     font-weight: bold;
     opacity: 0.1s;
 }
+<<<<<<< HEAD:static/css/site.css
 
 #myChart {
     width: 100%;
     height: 100%;
 }
+=======
+>>>>>>> e5d7e6995e63623ea63f9482c75543cdbd629a3c:css/site.css
