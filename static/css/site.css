@@ -1,4 +1,5 @@
 /*color based on Pokemon ideas */
+
 :root {
     --bg-color: #273746;
     --bar-color: white;
@@ -55,58 +56,22 @@ html body {
 }
 
 
-.BarChart-bar-1 {
+.BarChart-bar {
     width: 120px;
     padding-top: 5px;
     transition: background-color 1s;
     background-color: var(--pika-yellow);
 }
 
-.BarChart-bar-2 {
-    width: 120px;
-    padding-top: 5px;
-    transition: background-color 1s;
-    background-color: var(--pika-red);
-}
 
-.BarChart-bar-3 {
-    width: 120px;
-    padding-top: 10px;
-    transition: background-color 1s;
-    background-color:var(--bulb-blue);
-
-}
-
-.BarChart-bar-4 {
-    width: 120px;
-    padding-top: 10px;
-    transition: background-color 1s;
-    background-color: var(--bulb-pink);
-
-}
-.BarChart-bar-5 {
-    width: 120px;
-    padding-top: 10px;
-    transition: background-color 1s;
-    background-color: var(--char-orange);
-
-}
-
-.BarChart-bar-6 {
-    width: 120px;
-    padding-top: 10px;
-    transition: background-color 1s;
-    background-color: var(--char-green);
-
-}
-
-.BarChart-bar-7 {
-    width: 120px;
-    padding-top: 10px;
-    transition: background-color 1s;
-    background-color:var(--jig-pink);
-
-}
+/* to keep it look more DRY now */
+.BarChart-bar:nth-child(1) { background-color: var(--pika-yellow);}
+.BarChart-bar:nth-child(2) { background-color: var(--pika-red);}
+.BarChart-bar:nth-child(3) { background-color: var(--bulb-blue);}
+.BarChart-bar:nth-child(4) { background-color: var(--bulb-pink);}
+.BarChart-bar:nth-child(5) { background-color: var(--char-orange);}
+.BarChart-bar:nth-child(6) { background-color: var(--char-green);}
+.BarChart-bar:nth-child(7) { background-color: var(--jig-pink);}
 
 
 [class*="BarChart-bar"]:hover {
@@ -114,4 +79,9 @@ html body {
     color: white;
     font-weight: bold;
     opacity: 0.1s;
+}
+
+#myChart {
+    width: 100%;
+    height: 100%;
 }
